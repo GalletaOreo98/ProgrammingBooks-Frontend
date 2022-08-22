@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IBook } from '../models';
+import { ProgrammingBooksService } from '../services/programming-books.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  books!: IBook[];
+  
+
+  constructor( private bookService:ProgrammingBooksService) { }
 
   ngOnInit(): void {
+    console.log("HOME");
+    
+    this.bookService.getBookshelf().subscribe({
+      next: (res) => {
+        res = res.filter(e => !(e.name === 'CONTRIBUTING.md') && !(e.name === 'README.md'));
+        this.books = res;
+        console.log(res);
+      }
+    })  
+  }
+
+  selectBook(urlBook:string){
+    console.log(urlBook);
   }
 
 }

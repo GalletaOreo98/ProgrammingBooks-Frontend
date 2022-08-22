@@ -1,7 +1,7 @@
 # ![](https://raw.githubusercontent.com/GalletaOreo98/ProgrammingBooks-Frontend/main/src/favicon.ico) Programming Books - Frontend
 
 This is a simple frontend for [Anime-Girls-Holding-Programming-Books](https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books) repository  
-> *This is not a official frontend*
+> *This is not an official frontend*
 
 ## Angular Project
 

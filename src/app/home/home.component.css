@@ -1,0 +1,23 @@
+.green-color {
+    filter: hue-rotate(120deg);;
+}
+
+.blue-color {
+    filter: hue-rotate(180deg) saturate(200%) brightness(95.1%);
+}
+
+.pink-color {
+    filter: hue-rotate(300deg) saturate(100%) brightness(100%);;
+}
+
+.purple-color {
+    filter: hue-rotate(250deg) saturate(200%) brightness(85.1%);
+}
+
+.red-color {
+    filter: hue-rotate(7deg) saturate(180%) brightness(100.1%);
+}
+
+.dark-blue-color {
+    filter: hue-rotate(221deg) saturate(145%) brightness(92%)
+}

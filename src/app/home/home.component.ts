@@ -30,4 +30,35 @@ export class HomeComponent implements OnInit {
     console.log(urlBook);
   }
 
+  getRandomColorClass():string {
+    let color = "";
+    switch (Math.floor((Math.random() * (6 - 0 + 6)) + 0)) {
+      case 0:
+        color = "green-color";
+        break;
+      case 1:
+        color = "blue-color";
+        break;
+      case 2:
+        color = "purple-color";
+        break;
+      case 3:
+        color = "pink-color";
+        break;
+      case 4:
+        color = "red-color";
+        break;
+      case 5:
+        color = "dark-blue-color";
+        break;
+      case 6:
+        color = "";
+        break;
+      default:
+        color = "";
+        break;
+    }
+    return color;
+  }
+
 }

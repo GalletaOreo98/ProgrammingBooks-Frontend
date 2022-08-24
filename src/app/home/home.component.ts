@@ -10,29 +10,31 @@ import { ProgrammingBooksService } from '../services/programming-books.service';
 export class HomeComponent implements OnInit {
 
   books!: IBook[];
-  
+  numberLoops: number = 0;
 
-  constructor( private bookService:ProgrammingBooksService) { }
+  constructor(private bookService: ProgrammingBooksService) { }
 
   ngOnInit(): void {
-    console.log("HOME");
-    
     this.bookService.getBookshelf().subscribe({
       next: (res) => {
         res = res.filter(e => !(e.name === 'CONTRIBUTING.md') && !(e.name === 'README.md'));
+        res.forEach(element => {
+          element.color = this.getRandomColorClass();
+        });
         this.books = res;
         console.log(res);
       }
-    })  
+    })
   }
 
-  selectBook(urlBook:string){
+  selectBook(urlBook: string) {
     console.log(urlBook);
   }
 
-  getRandomColorClass():string {
+  getRandomColorClass(): string {
     let color = "";
-    switch (Math.floor((Math.random() * (6 - 0 + 6)) + 0)) {
+    let numRand = Math.floor((Math.random() * (6 + 1 - 0)) + 0);
+    switch (numRand) {
       case 0:
         color = "green-color";
         break;
@@ -56,6 +58,8 @@ export class HomeComponent implements OnInit {
         break;
       default:
         color = "";
+        console.log(numRand);
+
         break;
     }
     return color;

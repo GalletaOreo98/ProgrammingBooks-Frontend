@@ -1,6 +1,7 @@
 export interface IBook {
     name: string,
-    url: string
+    url: string,
+    color: string
 }
 
 

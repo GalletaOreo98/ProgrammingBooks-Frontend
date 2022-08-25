@@ -1,3 +1,9 @@
+ <!-- Navbar -->
+<nav class="navbar navbar-dark shadow">
+  <div class="container">
+      <h2 class="text-white">Programming Books</h2>
+  </div>
+</nav>
  <div class="row row-cols-2 row-cols-md-6 g-4 mx-4 my-4">
   
   <div *ngFor="let book of books" (click)="selectBook(book.name);" class="col">

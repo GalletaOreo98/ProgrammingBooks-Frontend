@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IBook } from '../models';
 import { ProgrammingBooksService } from '../services/programming-books.service';
 
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
   books!: IBook[];
   numberLoops: number = 0;
 
-  constructor(private bookService: ProgrammingBooksService) { }
+  constructor(private bookService: ProgrammingBooksService, private router:Router) { }
 
   ngOnInit(): void {
     this.bookService.getBookshelf().subscribe({
@@ -27,8 +28,9 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  selectBook(urlBook: string) {
-    console.log(urlBook);
+  selectBook(bookName: string) {
+    console.log(bookName);
+    this.router.navigate(['search', bookName]); 
   }
 
   getRandomColorClass(): string {

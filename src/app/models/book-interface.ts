@@ -7,5 +7,5 @@ export interface IBook {
 
 export interface IWaifuImage {
     name: string,
-    downloadUrl: string
+    download_url: string
 }

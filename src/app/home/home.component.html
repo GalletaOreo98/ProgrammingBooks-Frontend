@@ -1,6 +1,6 @@
  <div class="row row-cols-2 row-cols-md-6 g-4 mx-4 my-4">
   
-  <div *ngFor="let book of books" (click)="selectBook(book.url);" class="col">
+  <div *ngFor="let book of books" (click)="selectBook(book.name);" class="col">
     <div class="card h-100">
       <img src="assets/book_pixelart.png" class="card-img-top" [ngClass]="book.color" alt="book.name">
       <div class="card-body">

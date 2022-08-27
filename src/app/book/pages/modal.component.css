@@ -1,0 +1,64 @@
+h4 {
+    word-break: break-all
+}
+
+.btn-close{
+    color: #fff;
+    border-color: #fff;
+}
+.btn-close:hover {
+    background-color: #EF1423;
+    border-color: #EF1423;
+}
+.btn-close:active{
+    background-color: #EF1423;
+    border-color: #EF1423;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+
+/*This is not a btn dark, it is a close red btn*/
+.btn-dark{
+    color: #fff;
+    border-color: #fff;
+    background-color: #EF1423;
+    border-color: #EF1423;
+}
+.btn-dark:hover {
+    background-color: #EF1423;
+    border-color: #EF1423;
+    box-shadow: #f1384449 0px 4px 4px, #f1384449 0px 0px 0px 4px;
+}
+.btn-dark:active{
+    background-color: #EF1423;
+    border-color: #EF1423;
+    box-shadow: #f1384449 0px 4px 4px, #f1384449 0px 0px 0px 4px;
+}
+.btn-dark:focus{
+    background-color: #EF1423;
+    border-color: #EF1423;
+    box-shadow: #f1384449 0px 4px 4px, #f1384449 0px 0px 0px 4px;
+}
+
+.btn-outline-success{
+    color: #fff;
+    border-color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+.btn-outline-success:hover {
+    background-color: #198754;
+    border-color: #198754;
+    box-shadow: #00420049 0px 4px 4px, #00420049 0px 0px 0px 4px;
+}
+.btn-outline-success:active{
+    background-color: #198754;
+    border-color: #198754;
+    box-shadow: #00420049 0px 4px 4px, #00420049 0px 0px 0px 4px;
+}
+.btn-outline-success:focus{
+    background-color: #198754;
+    border-color: #198754;
+    box-shadow: #00420049 0px 4px 4px, #00420049 0px 0px 0px 4px;
+}

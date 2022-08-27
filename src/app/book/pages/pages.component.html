@@ -1,6 +1,6 @@
 <div class="gallery">
     <ul>
-        <li *ngFor="let image of arrayImages">
+        <li *ngFor="let image of arrayImages" (click)="open(image.name, image.download_url)">
             <img [src]="image.download_url">
         </li>
     </ul>

@@ -21,3 +21,11 @@
 .dark-blue-color {
     filter: hue-rotate(221deg) saturate(145%) brightness(92%)
 }
+
+.book-img{
+    cursor: pointer;
+}
+.book-img:active {
+    padding-left: 15px;
+    padding-right: 15px;
+}

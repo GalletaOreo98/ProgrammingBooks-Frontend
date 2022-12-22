@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { IWaifuImage } from 'src/app/models/book-interface';
 import { ProgrammingBooksService } from 'src/app/services/programming-books.service';
@@ -28,7 +28,7 @@ export class NgbdModalContent {
   @Input() download_url: string = "";
 
 
-  constructor(public activeModal: NgbActiveModal, private router:Router) {}
+  constructor(public activeModal: NgbActiveModal) {}
 
   download(url: string){
     window.open(url);
@@ -43,11 +43,14 @@ export class NgbdModalContent {
 export class PagesComponent implements OnInit {
   bookName: string = "";
   arrayImages!: IWaifuImage[];
-  constructor(private router:Router, private bookService:ProgrammingBooksService, private modalService: NgbModal) { }
+  constructor(private route: ActivatedRoute,
+     private bookService:ProgrammingBooksService, 
+     private modalService: NgbModal) 
+    {
+      this.bookName = this.route.snapshot.paramMap.get('bookname') || "error";
+    }
 
   ngOnInit(): void {
-    this.bookName = this.router.url;
-    this.bookName = this.bookName.slice(8);
     this.bookService.getBook(this.bookName).subscribe({
       next: (res) => {
         this.arrayImages = res;

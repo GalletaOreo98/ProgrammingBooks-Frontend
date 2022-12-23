@@ -7,11 +7,11 @@ This is a simple frontend for [Anime-Girls-Holding-Programming-Books](https://gi
 
 ## Deployment  
 
-Deployed on "deploy" branch by Github pages
+Deployed by Github pages - branch main /docs folder
 
-### Tip:   
+### Tips:   
 - Use "ng build" and copy the files in dist folder
-- Change this in your index.html: "\<base href="/">" to "\<base href="/ProgrammingBooks-Frontend/">" if u are deployin in the same way
+- Change this in your index.html: "\<base href="/">" to "\<base href="/ProgrammingBooks-Frontend/docs">" if u are deployin in the same way
 
 ## Angular Project
 

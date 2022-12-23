@@ -3,6 +3,16 @@
 This is a simple frontend for [Anime-Girls-Holding-Programming-Books](https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books) repository  
 > *This is not an official frontend*
 
+[GO TO THE WEBSITE](https://galletaoreo98.github.io/ProgrammingBooks-Frontend/)
+
+## Deployment  
+
+Deployed on "deploy" branch by Github pages
+
+### Tip:   
+- Use "ng build" and copy the files in dist folder
+- Change this in your index.html: "\<base href="/">" to "\<base href="/ProgrammingBooks-Frontend/">" if u are deployin in the same way
+
 ## Angular Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.

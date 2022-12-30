@@ -3,7 +3,8 @@
 This is a simple frontend for [Anime-Girls-Holding-Programming-Books](https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books) repository  
 > *This is not an official frontend*
 
-[GO TO THE WEBSITE](https://galletaoreo98.github.io/ProgrammingBooks-Frontend/)
+[GO TO THE DEVELOPMENT WEBSITE 💻](https://galletaoreo98.github.io/ProgrammingBooks-Frontend/)  
+### [GO TO THE PRODUCTION WEBSITE ✅](http://programming-books-frontend.vercel.app/)  
 
 ## Deployment  
 

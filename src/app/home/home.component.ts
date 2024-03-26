@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.bookService.getBookshelf().subscribe({
       next: (res) => {
-        res = res.filter(e => !(e.name === 'CONTRIBUTING.md') && !(e.name === 'README.md'));
+        res = res.filter(e => !(e.name === 'CONTRIBUTING.md') && !(e.name === 'README.md') && !(e.name === '.DS_Store'));
         res.forEach(element => {
           element.color = this.getRandomColorClass();
         });

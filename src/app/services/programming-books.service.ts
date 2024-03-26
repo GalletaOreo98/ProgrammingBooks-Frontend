@@ -15,7 +15,6 @@ export class ProgrammingBooksService {
   }
 
   getBook(bookName:string) {
-    return this.httpClient.get<IWaifuImage[]>(`https://api.github.com/repos/cat-milk/Anime-Girls-Holding-Programming-Books/contents${bookName}?ref=master`);
-  }
-
+    const encodedBookName = encodeURIComponent(bookName);
+    return this.httpClient.get<IWaifuImage[]>(`https://api.github.com/repos/cat-milk/Anime-Girls-Holding-Programming-Books/contents/${encodedBookName}?ref=master`);  }
 }
